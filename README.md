@@ -1,3 +1,3 @@
 # kemo-cv
 
-This repo store my LaTeX CV.
+This repo stores my LaTeX CV. It use the template of twentysecondcv.cls
