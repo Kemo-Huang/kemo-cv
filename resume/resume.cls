@@ -113,7 +113,7 @@
 % Color setup
 \ifdef{\@monochrome}%
   {\definecolor{basecolor}{HTML}{000000}}%
-  {\definecolor{basecolor}{HTML}{000066}}  % blue
+  {\definecolor{basecolor}{HTML}{00293C}}% blue
 %
 \definecolor{darkGrey}{HTML}{989898}
 %
@@ -161,7 +161,7 @@
 \ifdef{\@zh}{%
   \setlength{\leftcolwidth}{6em}
 }{
-  \setlength{\leftcolwidth}{8.1em}
+  \setlength{\leftcolwidth}{5em}
 }
 \setlength{\rightcolwidth}{\dimexpr \textwidth - \leftcolwidth - 4\tabcolsep}
 
@@ -399,16 +399,26 @@
 %   {<start-date>}  % #1
 %   [<end-date>]    % #2
 %   {<school>}      % #3
-%   {<department>}  % #4
-%   {<major>}       % #5
-%   {<degree>}      % #6
-\NewDocumentCommand{\education}{m o m m m m}{
+%   {<location>}	% #4
+%   {<department>}  % #5
+%   {<major>}       % #6
+%   {<degree>}      % #7
+%	{<honors>}		% #9
+%	{<Positions>}	% #10
+\NewDocumentCommand{\education}{m m m m m m m m}{
   \ifdef{\@zh}{%
-    \IfValueTF{#2}{#2}{现在} & \textbf{#3} \textbullet #4 \\*
-    #1 & #5 \textbullet #6 \\
+    #2 & \textbf{#3} \textbullet #5 \\% 
+    #1 & #6 \textbullet #7 \\% 
+    & \begin{minipage}[t]{\rightcolwidth}
+      	#8
+      \end{minipage}\\%
   }{%
-    \IfValueTF{#2}{#2}{present} & #4, \textbf{#3} \\*
-    #1 & #6 in #5 \\
+    #2 & \textbf{#3}, #4 \\% 
+    #1 & #5 \\% 
+    & \textit{#7 in #6} \\% 
+    & \begin{minipage}[t]{\rightcolwidth}
+      	#8
+      \end{minipage}\\%
   }
 }
 
@@ -463,12 +473,12 @@
 %   [<description>]  % #4
 %   [<tags>]         % #5
 \NewDocumentCommand{\experience}{o m m o o}{
-  #2 & #3 \\*
+  #2 & \textbf{#3} \\*
   \IfValueT{#1}{#1}
   \IfNoValueOrEmptyTF{#4}{}{%
      & \begin{minipage}[t]{\rightcolwidth}
          #4
-       \end{minipage} \\*
+       \end{minipage} \\
   }
   \IfValueT{#5}{%
     & \footnotesize{\tags{#5}} \\
