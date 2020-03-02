@@ -1,6 +1,7 @@
 DEPS:= resume.cls fontawesome5/fontawesome5.sty
-SRCS:= resume-en.tex
+SRCS:= resume-zh.tex resume-en.tex
 PDFS:= $(SRCS:%.tex=%.pdf)
+PDFCAT:= resume-zh+en.pdf
 
 DATE= $(shell date +%Y%m%d)
 DISTDIR= resume.$(DATE)
@@ -8,8 +9,18 @@ DISTDIR= resume.$(DATE)
 # Environment variables
 TEXINPUTS:= .:fontawesome5:$(TEXINPUTS)
 
-all: $(PDFS)
+all: $(PDFCAT)
 en: resume-en.pdf
+zh: resume-zh.pdf
+
+$(PDFCAT): $(PDFS)
+	gs -dBATCH -dNOPAUSE -dPrinted=false \
+		-sDEVICE=pdfwrite \
+		-sOutputFile=$@ \
+		$(PDFS)
+
+resume-zh.pdf: resume-zh.tex $(DEPS)
+	env TEXINPUTS=$(TEXINPUTS) latexmk -xelatex $<
 
 resume-en.pdf: resume-en.tex $(DEPS)
 	env TEXINPUTS=$(TEXINPUTS) latexmk -xelatex $<
