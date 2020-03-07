@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tgschola} % or any other font package you like
+\usepackage{setspace}
+\onehalfspacing
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{%
+  \footnotesize\sffamily
+  \yourname\quad
+  \youremail\quad
+  \itshape\yourweb}
+
+\newcommand{\soptitle}{Statement of Interest}
+\newcommand{\yourname}{Kemiao Huang}
+\newcommand{\youremail}{11610728@mail.sustech.edu.cn}
+\newcommand{\yourweb}{https://kemo.tech}
+
+\usepackage[
+  colorlinks,
+  breaklinks,
+  pdftitle={\yourname - \soptitle},
+  pdfauthor={\yourname},
+  unicode
+]{hyperref}
+
+\begin{document}
+
+\begin{center}\LARGE\soptitle\\
+\large \yourname\ 
+\end{center}
+
+\setlength{\parskip}{0.3\baselineskip}
+
+My interest in computer science (CS) origins from my childhood dream of developing a well-known software application of my own. However, it wasn't until I began studying at Southern University of Science and Technology that I realized the importance of computing theories and engineering strategies in this information era. Moreover, upon my road of pursuing advanced technology, I found my enjoyment of studying in a strong academic atmosphere. Hence, I set my goal as furthering my education in the area of computing and software (CAS) and I am highly motivated to apply for your M.Eng. program with full preparation.
+
+My systematic studies in undergraduate phase contribute not only to my knowledge hierarchy for CS but also to my strong interest in programming. Take the algorithm design as an example, the program competitions in our department's online-judge (OJ) platform really ignites my passion. Once I followed the famous Dijkstra's algorithm to solve an OJ problem which is about the all pairs shortest path (APSP) but what surprised me is that my program ran much slower than others' which used the less optimal Floyd's algorithm. After reviewing the book ``Introduction to Algorithm'', I realized that only using a Fibonacci heap instead of a binary heap can the algorithm reach the asymptotic complexity $O(mn + n^2 log n)$. What's more, Java is the only programming language I learned at that time but through investigation, I found that programs using C/C++ can run much faster due to the different internal architectures. Although re-implementing the searching algorithms and self-learning a new programming language cost me a lot of efforts, this experience built a deep impression in my mind and I successfully employed the optimized program in my capacitated arc routing problem (CARP) project one year later. In fact, finding out the most optimal solution to the problem is an expensive and long-term endeavor. However, from the trying I did learn further about the theories and the applications for mathematical algorithms. 
+
+There are other advanced group projects which take me into a deeper world of CS, such as STM32 electronic board development, orthogonal frequency division multiplexing (OFDM), socket-based P2P network designing and Android application development and testing. I actually prefer collaborative projects to individual ones because group members can explore and exploit their abilities further by the appropriate communication and the work distribution. Besides, the final results are formed more like ``products'' rather than ``thoughts''. For instance, our Android application developed in 2018 has been widely used by the students to check the latest buses, lectures, the university calendar, etc. In brief, the project-driven courses at university cultivated my collaborative ability, problem-solving skills and my endless curiosity in CS. 
+
+In addition to classes, I have also worked in my supervisor Qi Hao's research lab and studied topics about computer vision and system engineering in autonomous driving due to my strong ambition. In my early research about LiDAR point cloud enhancement, it is supposed to trade off the speed and the accuracy to guarantee the overall performance for online driving tasks like simultaneous location and mapping (SLAM). Thus, my core idea is to process sensor data with the kernel dilation upon regions of interest for the higher computing efficiency. Due to the good presentation and feedback, this project won our department's scholarship in 2019. 
+
+Currently I focus on developing 3D multiple object tracking system for my bachelor thesis. Specifically, based on state-of-the-arts, both motion and appearance cues are used to calculate data association costs between measurements and identified trajectories. The Kalman filter or the long-short term memory (LSTM) is used to predict and update objects' motion states and the single-modality feature extractors as well as the feature fusion network are used to correlate objects' appearance. In consideration of the expensive feature extraction processes, the system is enhanced by cascading the models with a state-wise matching pipeline. More details can be referred in my submitted paper. 
+
+Personally, I have also cultivated a broad interest in other areas, such as art and typography, as a source of inspiration. When I was a sophomore, I signed up a student club for ``Chinese Calligraphy and Painting'' with several like-minded friends. On the other hand, I also took charge of the student union's department of publicity and operated our college's official web platform. All the art works and the online articles came from persevering efforts and they also obtained great appreciation. 
+
+Based on the above experience, McMaster's CAS department is especially attractive to me not only because of the interesting curriculum, such as Continuous Optimization and Real-Time Systems, but also due to the fascinating projects carried on by the remarkable faculty, such as Prof. Rong Zheng's work on wireless resource management, Prof. Hassan Ashtiani's work on theoretical machine learning and Prof. Wenbo He's work on big data systems. Overall, I wish to become a capable engineer in the area of computing and software through my graduate studies at your department and I will spare no effort to overcome any challenges. 
+
+\end{document}
