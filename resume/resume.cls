@@ -109,6 +109,7 @@
 \newcommand*{\locationSymbol}{\faMapMarkerAlt}
 \newcommand*{\phoneSymbol}{\faPhone}
 \newcommand*{\universitySymbol}{\faUniversity}
+\newcommand*{\webpageSymbol}{\faUser}
 
 % Color setup
 \ifdef{\@monochrome}%
@@ -272,6 +273,8 @@
 \newcommand*{\degree}[1]{\icontext{\degreeSymbol}{#1}}
 % University
 \newcommand*{\university}[1]{\icontext{\universitySymbol}{#1}}
+% Webpage
+\newcommand*{\webpage}[1]{\icontext{\webpageSymbol}{#1}}
 
 % LinkedIn: \linkedin{<username>}
 \newcommand*{\linkedin}[1]{%
