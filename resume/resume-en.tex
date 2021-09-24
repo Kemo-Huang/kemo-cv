@@ -6,7 +6,7 @@
 
 % File information shown at the footer of the last page
 \fileinfo{%
-  \faCopyright{} 2019, Kemiao HUANG \hspace{0.5em}
+  \faCopyright{} 2021, Kemiao HUANG \hspace{0.5em}
   \githublink{kemo-huang}{kemo-cv} \hspace{0.5em}
   \faEdit{} \today
 }
@@ -22,11 +22,11 @@
 
 \profile{
   \mobile{(+86)189-2935-7397}
-  \email{11610728@mail.sustech.edu.cn}
+  \email{12032943@mail.sustech.edu.cn}
   \birthday{Nov. 1998} \\
   \home{Shenzhen, Guangdong, China}
   \github{Kemo-Huang}
-  \webpage{kemiao.website}
+  % \webpage{kemiao.website}
   % Custom information:
   % \icontext{<icon>}{<text>}
   % \iconlink{<icon>}{<link>}{<text>}
@@ -49,20 +49,27 @@
     {Bachelor of Engineering}%
 	{\begin{itemize}%
 		\item Cumulative GPA: 3.53/4.0, three scholarships.
-		\item Third prize winner for the exhibition of Innovative Experiment at CSE.
-		%\item Head of publicity department at student union with the 2018 best department award.
-		%\item Founder of college calligraphy and painting club.
 	\end{itemize}}%
+ \education%
+    {Sep. 2020}%
+    {Present}%
+    {Southern University of Science and Technology}%
+    {Shenzhen, China}%
+    {Department of Computer Science and Engineering}%
+    {Computer Science}%
+    {Master of Engineering}%
+	{\begin{itemize}%
+		\item Published one IROS 2021 paper.
+	\end{itemize}}%
+	
 \end{educations}
 	
 %======================================================================
-\sectionTitle{ACADEMIC INTEREST}{\faStar}
+\sectionTitle{RESEARCH INTEREST}{\faStar}
 %======================================================================
 \begin{itemize}
-  \item \textbf{Autonomous Driving \& Robotics}\\
-  	Perception System, Sensor Fusion, Behavior Prediction, Simultaneous Localization and Mapping (SLAM).
-  \item \textbf{Machine Learning \& Computer Vision}\\
-  	Deep Learning, Bayesian and Statistics, Image and Point Cloud Processing, Object Detection and Tracking.
+  \item \textbf{Autonomous Driving \& Computer Vision}\\
+  	3D Object Detection and Tracking, Camera-LiDAR Fusion, Prediction.
 \end{itemize}
 
 %======================================================================
@@ -73,30 +80,37 @@ Research Lab: \textit{Intelligent Sensing and Unmanned Systems}, SUSTech
 
 \begin{experiences}
   \experience%
-    {Present}%
-    {3D Vehicle Tracking}%
-    [Followed by tracking-by-detection paradigm, this work tries to improve the robustness of the tracking algorithm by fusing camera and LiDAR feature with an extra neural network and associate the targets with multiple cues and the Hungarian algorithm. The track management stage is designed to speed up the tracking pipeline and better tackle the occlusion problem.]
+	{2021}%
+    {Joint 3D Object Detection and Tracking}%
+    [This work develops an joint network to perform object detection and correlation simultaneously with fused camera-LiDAR input. Detection confidences, affinities and start-end confidences are comprehensively used in data association. The experiment shows competitive results on the KITTI benchmark.]  
+  
+\separator{0.5ex}
+
+  \experience%
+    {2020}%
+    {3D Object Tracking}%
+    [Following the tracking-by-detection paradigm, this work studies the effectiveness of different camera-LiDAR fusion methods and motion prediction methods in multi-object tracking.]
 
 \separator{0.5ex}
 
   \experience%
-    {Oct. 2019}%
-    {3D Vehicle Detection}%
-    [Built an online 3D vehicle detection system for monocular cameras and a single LiDAR. Integrated the detection algorithm with the "Autoware" software for autonomous driving system based on robot operating system (ROS) on Linux and tested with bus data from Shenzhen Haylion Tech.] 
+    {2019}%
+    {3D Object Detection}%
+    [This work builds an online 3D vehicle detection system with camera-LiDAR input based on ``Autoware'' and the robotic operating system. The system was tested with the real-word data.] 
 
 \separator{0.5ex}
 
   \experience%
-    {May 2019}%
+    {2019}%
     {Sensor Calibration}%
-    [Experimented extrinsic calibration between monocular cameras and LiDARs. The 2D-3D point correspondences are built by corner detectors respectively and the extrinsic parameters are solved efficently by perspective-n-point (PnP) methods with RANSAC optimization.]
+    [This work studies the extrinsic calibration between cameras and LiDARs. The 2D-3D point correspondences are built by the corner detectors respectively. The parameters are finally solved by perspective-n-point (PnP) methods with RANSAC optimization.]
 
 \separator{0.5ex}
 
   \experience%
-    {Oct. 2018}%
+    {2018}%
     {LiDAR Point Cloud Upsampling}%
-    [Assessed and optimized an image processing pipeline for depth image super-resolution. The depth from point clouds are completed by kernel dilation and exception filtering with fast speed and relatively low loss upon KITTI benchmark.]   
+    [This work evaluates an image processing pipeline for depth image super-resolution. The sparse depth points are completed by the kernel dilation and the exception filtering.]   
     
 
 \end{experiences}
@@ -106,13 +120,13 @@ Research Lab: \textit{Intelligent Sensing and Unmanned Systems}, SUSTech
 %======================================================================
 \begin{competences}[12em]
   \comptence{Operating Systems}{
-    Linux, Robot Operating System (ROS)
+    Ubuntu, Robotic Operating System (ROS)
   }
-  \comptence{Software Libraries}{%
-    OpenCV, Pytorch, Scikit-learn, Pandas, MATLAB, Point Cloud Library (PCL)
+  \comptence{CV Libraries}{%
+    PyTorch, OpenCV, Scikit Learn, Point Cloud Library (PCL)
   }
-  \comptence{App Development}{%
-    Android, SpringBoot, Flask, WeChat mini-app, Unity
+  \comptence{Software Frameworks}{%
+    Carla, Autoware, Unity, Android, SpringBoot, Flask, WeChat mini-app
   }
 \end{competences}
 
