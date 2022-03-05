@@ -13,8 +13,8 @@
 
 % File information shown at the footer of the last page
 \fileinfo{%
-  \faCopyright{} 2019, 黄珂邈 \hspace{0.5em}
-  \githublink{kemo-huang}{kemo-cv} \hspace{0.5em}
+  \faCopyright{} 2022, 黄珂邈 \hspace{0.5em}
+  \githublink{Kemo-Huang}{kemo-cv} \hspace{0.5em}
   \faEdit{} \today
 }
 
@@ -27,11 +27,11 @@
 
 \profile{
   \mobile{189-2935-7397}
-  \email{11610728@mail.sustech.edu.cn}
+  \email{12032943@mail.sustech.edu.cn}
   \birthday{1998年11月} \\
   \home{广东深圳}
   \github{Kemo-Huang}
-  \webpage{kemiao.webiste}
+  % \webpage{kemiao.webiste}
   % Custom information:
   % \icontext{<icon>}{<text>}
   % \iconlink{<icon>}{<link>}{<text>}
@@ -55,7 +55,6 @@
 	{\begin{itemize}%
 		\item 课题组导师：郝祁（工学院人工智能无人驾驶创新平台）
 	\end{itemize}
-	专业课程：数据结构与算法分析、概率论与数理统计、计算机网络、计算机组成原理、嵌入式系统与微机原理、数据库原理、面向对象分析与设计、软件工程、软件测试、离散数学、人工智能、智能机器人、计算机视觉、机器学习
 	}%
   \education%
     {2016年9月}%
@@ -66,12 +65,12 @@
     {计算机科学与技术}%
     {学士}%
 	{\begin{itemize}%
-		\item GPA: 3.53/4.0, 三次获得奖学金
-		\item 计算机系创新实验成果展三等奖
+		\item GPA: 3.53/4.0，四次获得奖学金
+		\item 学生会部长，社团创始人
 		%\item 树礼书院学生会宣传部部长，2018最佳部门
 		%\item 翰墨社创始人、社长
 	\end{itemize}
-	专业课程：数据结构与算法分析、概率论与数理统计、计算机网络、计算机组成原理、嵌入式系统与微机原理、数据库原理、面向对象分析与设计、软件工程、软件测试、离散数学、人工智能、智能机器人、计算机视觉、机器学习
+	专业课程：数据结构与算法分析、概率论与数理统计、计算机网络、计算机组成原理、嵌入式系统与微机原理、数据库原理、面向对象分析与设计、软件工程、软件测试、离散数学、人工智能、智能机器人、计算机视觉、机器学习、优化算法
 	}%
 \end{educations}
 
@@ -90,44 +89,44 @@
 \begin{experiences}
 
   \experience%
-    {目前的方向）}%
-    {3D目标检测}%
-    [使用Autoware(ROS)和预训练的PointPillars网络对阿尔法巴士采集的点云数据进行在线测试。] 
+    {目前方向}%
+    {3D目标检测与跟踪（新）}%
+    [为了更好地解决目标跟踪时的遮挡问题，即避免因遮挡导致的漏检和目标间的错误匹配，(1) 拟在检测网络中加入RNN模型，(2) 进行ReID和速度预测的辅助训练，(3) 传感器特征融合时添加可学习的calibration参数，(4) 加入场景流方法补充被遮挡点云，来最大化地增强数据完整度和网络模型的全局attention。] 
     
 \separator{0.5ex}
   \experience%
-    {2021.3（硕士）}%
+    {2021.3(硕)}%
     {3D目标检测与跟踪}%
-    [为了改进目标跟踪算法性能，联合了多模态检测（EPNet）和ReID两部分的网络，并使用MIP的方式对网络输出的分类置信度、匹配置信度、进入和遮挡置信度，以及卡尔曼滤波器的预测结果进行综合的数据联合，在KITTI数据集上产生了更鲁棒的跟踪效果。以第一作者在IROS2021发表论文``Joint Multi-Object Detection and Tracking with Camera and LiDAR Fusion for Autonomous Driving'']
+    [为了改进目标跟踪算法性能，在ROI层面联合多模态检测网络（EPNet）和correlation的网络，并使用MIP的方式对网络输出的分类置信度、匹配置信度、进入和遮挡置信度，以及卡尔曼滤波器的预测结果进行综合地数据联合，在KITTI数据集上实现了更鲁棒的跟踪效果和更快的速度，准确度在当时的leaderboard上排名第四，并以第一作者发表IROS 2021论文``Joint Multi-Object Detection and Tracking with Camera and LiDAR Fusion for Autonomous Driving'']
 
 \separator{0.5ex}
   \experience%
-    {2019.10（本科）}%
+    {2019.10(本)}%
     {3D目标检测}%
-    [使用Autoware(ROS)和预训练的PointPillars网络对阿尔法巴士采集的点云数据进行在线测试。] 
+    [使用Autoware(ROS)和预训练的PointPillars网络对巴士采集的点云数据进行在线测试。] 
 
 \separator{0.5ex}
   \experience%
-    {2019.5（本科）}%
-    {相机和激光雷达外参标定}%
+    {2019.5(本)}%
+    {相机、激光雷达外参标定}%
     [为了融合多模态数据，使用边缘提取算法分别建立2D和3D的对应点，通过PnP方法求外参，在几何上实现传感器校准。]
 
 \separator{0.5ex}
   \experience%
-    {2018.10（本科）}%
+    {2018.10(本)}%
     {点云超分辨率重建}%
-    [为了解决点云数据稀疏问题，分阶段使用核矩阵对投影后的点云图像进行扩张、非重要区域舍弃和异常信息过滤，生成稠密的伪点云。]   
+    [为了解决点云稀疏问题，分阶段对投影后的点云图像进行扩张、非重要区域舍弃和异常信息过滤，生成稠密的伪点云。]   
 \end{experiences}
 
 %%======================================================================
 \sectionTitle{其他介绍}{\faCogs}
 %======================================================================
 \begin{competences}[12em]
-  \comptence{英语}{
-    CET-6, TOFEL (93)
+  \comptence{英语水平}{
+    CET-6, TOFEL (93分)
   }
   \comptence{开发能力}{
-    熟悉Python, PyTorch和Linux, 对C/C++, ROS, sklearn, OpenCV, PCL以及Java软件开发有一定程度的工程经验。
+    掌握Python、PyTorch和Linux, 熟悉OpenPCDet等开源项目，对C/C++、ROS、sklearn、OpenCV、PCL以及Java软件开发有一定程度的使用经验。
   }
 \end{competences}
 
